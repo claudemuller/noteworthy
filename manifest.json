@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Noteworthy",
+  "version": "1.0",
+  "description": "Noteworthy is a plugin that allows you quickly make exportable/savable notes from the web.",
+  "icons": {
+    "48": "icons/noteworthy-48.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "noteworthy@dxt.rs"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["noteworthy.js"]
+    }
+  ]
+}
